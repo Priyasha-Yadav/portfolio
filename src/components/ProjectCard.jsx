@@ -67,7 +67,7 @@ const ProjectCard = memo(({ project }) => {
                             className="ml-auto shrink-0 h-8 w-8 rounded-full
               bg-white/5 flex items-center justify-center
               text-sm transition
-              group-hover:bg-purple-500 group-hover:scale-110"
+              group-hover:bg-purple-700 group-hover:scale-110"
                         >
                             ↗
                         </span>

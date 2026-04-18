@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
@@ -173,22 +173,68 @@ const ContactForm = () => {
                                         {/* X (Twitter) Icon */}
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
                                     </a>
+                                    <a href="https://www.youtube.com/@experimental-coder" target="_blank" rel="noopener noreferrer"
+                                        className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-purple-600 transition-colors">
+                                        {/* YouTube Icon */}
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.4.6A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.8.6 9.4.6 9.4.6s7.6 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8zM9.8 15.5v-7l6.2 3.5-6.2 3.5z" /></svg>
+                                    </a>
 
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div className="mt-6 flex items-center justify-between">
+                        {/* Primary CTA */}
+                        <a
+                            href="https://drive.google.com/file/d/1ZsG26LZskWoJ5AftYbhthpujeV8sxx9Y/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex-1 text-center py-3 rounded-lg
+    bg-gradient-to-r from-red-500 to-purple-600
+    text-white font-semibold"
+                        >
+                            View Resume
+                        </a>
 
-                    <a
-                        href="https://drive.google.com/drive/folders/1tkjzl52oPiK3DNTzhKB1c4vpwY9t-Seh"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-6 block text-center py-3 rounded-lg
-                       bg-gradient-to-r from-red-500 to-purple-600
-                       text-white font-semibold"
-                    >
-                        View Resume
-                    </a>
+                        {/* Secondary CTA with tooltip */}
+                        <div className="relative ml-3 group">
+                            <a
+                                href="https://drive.google.com/uc?export=download&id=1ZsG26LZskWoJ5AftYbhthpujeV8sxx9Y"
+                                className="flex items-center justify-center"
+                            >
+                                <span
+                                    className="h-8 w-8 rounded-full
+        bg-purple-600
+        flex items-center justify-center
+        transition transform group-hover:scale-110"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="white"
+                                        strokeWidth="2"
+                                    >
+                                        <path d="M12 5v14"></path>
+                                        <path d="M19 12l-7 7-7-7"></path>
+                                    </svg>
+                                </span>
+                            </a>
+
+                            {/* Tooltip */}
+                            <div
+                                className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2
+      px-2 py-1 text-xs rounded-md
+      bg-gray-900 text-white whitespace-nowrap
+      opacity-0 group-hover:opacity-100
+      transition pointer-events-none"
+                            >
+                                Download Resume
+                            </div>
+                        </div>
+                    </div>
                 </motion.div>
 
                 {/* RIGHT CARD */}

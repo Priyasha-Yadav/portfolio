@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Code2 } from 'lucide-react';
+import { Github, Linkedin, Mail, Code2, Youtube } from 'lucide-react';
 
 
 const Footer = () => {
@@ -29,7 +29,13 @@ const Footer = () => {
       icon: Mail,
       url: 'mailto:priyasha.yadav.cg@gmail.com',
       color: 'hover:text-red-400'
-    }
+    },
+        {
+      name: 'YouTube',
+      icon: Youtube,
+      url: 'https://www.youtube.com/@experimental-coder',
+      color: 'hover:text-gray-300'
+    },
   ];
 
   return (
@@ -37,7 +43,7 @@ const Footer = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-gray-400 text-sm">
-            © {currentYear} Priyasha Yadav. Built with React & Tailwind CSS
+            © {currentYear} Priyasha Yadav
           </div>
 
           <div className="flex items-center space-x-6">

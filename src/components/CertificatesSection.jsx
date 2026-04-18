@@ -377,7 +377,6 @@ const CertificatesSection = () => {
                 ))}
             </div>
             {/* ---------- PAGINATION ---------- */}
-            {/* ---------- PAGINATION ---------- */}
             {totalPages > 1 && (
                 <div className="flex justify-center items-center gap-3 mt-12">
 
@@ -402,7 +401,7 @@ const CertificatesSection = () => {
                             onClick={() => setCurrentPage(page)}
                             className={`w-8 h-8 rounded-full text-sm transition
           ${page === currentPage
-                                    ? 'bg-red-500 text-white font-bold'
+                                    ? 'bg-purple-700 text-white font-bold'
                                     : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
                                 }`}
                             aria-label={`Go to page ${page}`}
