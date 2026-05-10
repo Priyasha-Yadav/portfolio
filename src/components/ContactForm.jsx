@@ -186,7 +186,7 @@ const ContactForm = () => {
                     <div className="mt-6 flex items-center justify-between">
                         {/* Primary CTA */}
                         <a
-                            href="https://drive.google.com/file/d/1ZsG26LZskWoJ5AftYbhthpujeV8sxx9Y/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1X-ywnlvdlmxgGRpJcSH4vdU9M7k_ukJC/view"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex-1 text-center py-3 rounded-lg
@@ -199,7 +199,7 @@ const ContactForm = () => {
                         {/* Secondary CTA with tooltip */}
                         <div className="relative ml-3 group">
                             <a
-                                href="https://drive.google.com/uc?export=download&id=1ZsG26LZskWoJ5AftYbhthpujeV8sxx9Y"
+                                href="https://drive.google.com/uc?export=download&id=1X-ywnlvdlmxgGRpJcSH4vdU9M7k_ukJC"
                                 className="flex items-center justify-center"
                             >
                                 <span
