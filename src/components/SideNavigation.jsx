@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react';
-import { Home, User, Briefcase, MessageSquare, Award, X, Github, Mail, Settings, BookCheck, Code2, ChevronRight, Utensils, PlayCircleIcon } from 'lucide-react';
+import { Home, User, Briefcase, MessageSquare, Award, X, Github, Mail, Settings, BookCheck, ChevronRight, Utensils, PlayCircleIcon } from 'lucide-react';
 
 const socialLinks = {
     github: "https://github.com/Priyasha-Yadav",
     linkedin: "https://www.linkedin.com/in/priyasha-yadav/",
     twitter: "https://x.com/YadavPriyasha",
-    leetcode: "https://leetcode.com/u/Priyasha_Yadav/",
     hackerrank: "https://www.hackerrank.com/profile/priyasha_yadav_1",
     sololearn: "https://www.sololearn.com/en/profile/32474399",
     mail: "mailto:priyasha.yadav.cg@gmail.com",
@@ -60,11 +59,6 @@ const SideNavigation = ({ isExpanded, setIsExpanded }) => {
             } else if (section === 'certificates') {
                 window.history.pushState(null, "", "#certificates");
                 document.getElementById('certificates-section')?.scrollIntoView({ behavior: 'smooth' });
-                setActiveSection(section);
-            }
-            else if (section === 'projects') {
-                window.history.pushState(null, "", "#projects");
-                document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
                 setActiveSection(section);
             }
             else if (section === 'home') {
@@ -146,7 +140,6 @@ const SideNavigation = ({ isExpanded, setIsExpanded }) => {
     const navigationItems = useMemo(
         () => [
             { icon: <Home size={22} />, section: 'home', label: 'Home' },
-            { icon: <Briefcase size={22} />, section: 'projects', label: 'Projects' },
             { icon: <MessageSquare size={22} />, section: 'skills', label: 'Skills' },
             { icon: <PlayCircleIcon size={24} />, section: 'communication', label: 'Explanation' },
             { icon: <Award size={22} />, section: 'certificates', label: 'Certificates' },
@@ -154,7 +147,6 @@ const SideNavigation = ({ isExpanded, setIsExpanded }) => {
             { icon: <Mail size={22} />, section: 'contact', label: 'Contact Me' },
             { icon: <Github size={22} />, section: 'github', label: 'GitHub' },
             { icon: <BookCheck size={22} />, section: 'sololearn', label: 'Sololearn' },
-            { icon: <Code2 size={22} />, section: 'leetcode', label: 'LeetCode' },
             { icon: <Utensils size={22} />, section: 'codechef', label: 'CodeChef' },
             { icon: <Settings size={22} />, section: 'settings', label: 'Settings' },
         ],
