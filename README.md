@@ -2,7 +2,7 @@
 # Priyasha Yadav — Portfolio Website
 
 A personal portfolio website showcasing my projects, technical skills, and experience in web development.
-[Visit Portfolio](https://priyasha-yadav.vercel.app)
+[Visit Portfolio](https://priyashayadav.vercel.app)
 
 ## Preview
 
